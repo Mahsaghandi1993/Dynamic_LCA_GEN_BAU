@@ -1,0 +1,5 @@
+metric,value
+mean REF-GEN difference (kg CO2e),4684830.209012496
+CI2.5 (kg CO2e),3316431.232923457
+CI97.5 (kg CO2e),6134149.516289073
+P(GEN < REF),1.0

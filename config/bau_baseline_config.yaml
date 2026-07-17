@@ -1,0 +1,74 @@
+{
+  "groups": {
+    "west_residential": {
+      "heating": {
+        "fuels": [
+          "natural_gas",
+          "fuel_oil"
+        ],
+        "fuel_share_key": "west_residential_heating",
+        "coefficient_mode": "explicit_efficiency",
+        "fallback_efficiency": {
+          "natural_gas": 0.82,
+          "fuel_oil": 0.80
+        }
+      },
+      "cooling": {
+        "fuel": "electricity",
+        "coefficient_mode": "archetype",
+        "fallback_cop": 3.0
+      },
+      "dhw": {
+        "fuels": [
+          "natural_gas",
+          "fuel_oil"
+        ],
+        "fuel_share_key": "west_residential_heating",
+        "coefficient_mode": "explicit_efficiency",
+        "fallback_efficiency": {
+          "natural_gas": 0.62,
+          "fuel_oil": 0.60
+        }
+      }
+    },
+    "east_or_southeast_residential": {
+      "inherit_from": "west_residential",
+      "note": "Temporary inheritance from west_residential until exact parcel-level fuel assignments are available."
+    },
+    "fha_multifamily": {
+      "heating": {
+        "fuel": "electricity",
+        "mode": "electric_resistance",
+        "efficiency": 1.0
+      },
+      "cooling": {
+        "fuel": "electricity",
+        "coefficient_mode": "archetype",
+        "fallback_cop": 3.0
+      },
+      "dhw": {
+        "fuel": "electricity",
+        "mode": "electric_resistance",
+        "efficiency": 1.0,
+        "note": "Provisional all-electric DHW assumption paired with the provisional electric-resistance heating baseline."
+      }
+    },
+    "commercial_municipal": {
+      "heating": {
+        "fuel": "natural_gas",
+        "coefficient_mode": "explicit_efficiency",
+        "fallback_efficiency": 0.85
+      },
+      "cooling": {
+        "fuel": "electricity",
+        "coefficient_mode": "explicit_efficiency",
+        "fallback_cop": 3.2
+      },
+      "dhw": {
+        "fuel": "natural_gas",
+        "coefficient_mode": "explicit_efficiency",
+        "fallback_efficiency": 0.8
+      }
+    }
+  }
+}

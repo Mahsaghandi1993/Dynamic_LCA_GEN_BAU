@@ -1,0 +1,3 @@
+mode,annual_delivered_kwh_th,lifetime_delivered_kwh_th,service_life_years,note
+heatnets_case_service_loads,1787496.1157757607,89374805.78878804,50,Audited 37-building HEATNETS-aligned service-load denominator.
+existing_non_b6_project,1787496.1157757607,127720462.0,50,Current non-B6 notebook denominator retained for immediate Brightway compatibility.

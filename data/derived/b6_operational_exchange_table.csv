@@ -1,0 +1,8 @@
+case,normalization_mode,exchange_key,exchange_kind,input_amount_total_over_life,input_amount_per_kwh_th,unit,notes
+GEN,heatnets_case_service_loads,electricity_medium_voltage,technosphere,21772991.169001568,0.2436144165779319,kilowatt hour,Includes network (397922.531 kWh/y) and DHW (37537.292 kWh/y).
+BAU,heatnets_case_service_loads,electricity_medium_voltage,technosphere,43619403.981260434,0.4880503358445612,kilowatt hour,"BAU electric heating, cooling, and DHW site energy."
+BAU,heatnets_case_service_loads,natural_gas_high_pressure,technosphere,1840537.7122592821,0.020593473697821177,cubic meter,Natural gas supply only; direct combustion and leakage stay in biosphere flows.
+BAU,heatnets_case_service_loads,light_fuel_oil,technosphere,361153.6701247391,0.004040889005993738,kilogram,Fuel-oil supply only; direct combustion stays in biosphere flows.
+BAU,heatnets_case_service_loads,carbon_dioxide_fossil,biosphere,4658235.223335112,0.0521202276438343,kilogram,Direct operational CO2 from gas plus oil combustion.
+BAU,heatnets_case_service_loads,methane_fossil,biosphere,28570.35319128447,0.00031966898209325774,kilogram,Direct operational CH4 including gas combustion and methane leakage.
+BAU,heatnets_case_service_loads,dinitrogen_monoxide,biosphere,9.560331747768396,1.0696897927097626e-07,kilogram,Direct operational N2O from gas plus oil combustion.

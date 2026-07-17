@@ -1,0 +1,33 @@
+stage,case,metric_family,metric_key,metric_display_name,method_mode,unit,score_case_total
+B,GEN,climate,climate_static,Global warming impact,conventional_static,kg CO2e,15352295.471549377
+B,GEN,climate,climate_static,Global warming impact,time_explicit_static,kg CO2e,3030980.413403339
+B,GEN,climate,dynamic_GWP100,Global warming impact,dynamic_climate,kg CO2e,2759427.750449855
+B,GEN,climate,dynamic_RF,Radiative forcing,dynamic_climate,W*yr/m^2,2.4438535408517177e-07
+B,GEN,non_climate,acidification,Acidification,conventional_static,kg SO2 eq,44882.25302017699
+B,GEN,non_climate,acidification,Acidification,time_explicit_static,kg SO2 eq,11564.460366196328
+B,GEN,non_climate,eutrophication,Eutrophication,conventional_static,kg N eq,4121.020009875026
+B,GEN,non_climate,eutrophication,Eutrophication,time_explicit_static,kg N eq,643.4908888082848
+B,GEN,non_climate,ozone_depletion,Ozone Depletion,conventional_static,kg CFC-11 eq,0.4562152318597024
+B,GEN,non_climate,ozone_depletion,Ozone Depletion,time_explicit_static,kg CFC-11 eq,0.4477261516570681
+B,GEN,non_climate,particulate_matter,Particulate Matter Formation,conventional_static,kg PM2.5 eq,5667.133814657072
+B,GEN,non_climate,particulate_matter,Particulate Matter Formation,time_explicit_static,kg PM2.5 eq,1392.215747014003
+B,GEN,non_climate,photochemical_oxidant_formation,Photochemical Oxidant Formation,conventional_static,kg O3 eq,486375.082759511
+B,GEN,non_climate,photochemical_oxidant_formation,Photochemical Oxidant Formation,time_explicit_static,kg O3 eq,113673.87481562364
+B,GEN,non_climate,fossil_energy_demand,Fossil Energy Demand,conventional_static,MJ,151283387.3366945
+B,GEN,non_climate,fossil_energy_demand,Fossil Energy Demand,time_explicit_static,MJ,31407616.165780887
+B,BAU,climate,climate_static,Global warming impact,conventional_static,kg CO2e,32714280.142637175
+B,BAU,climate,climate_static,Global warming impact,time_explicit_static,kg CO2e,8057945.8438517945
+B,BAU,climate,dynamic_GWP100,Global warming impact,dynamic_climate,kg CO2e,10786289.826478984
+B,BAU,climate,dynamic_RF,Radiative forcing,dynamic_climate,W*yr/m^2,9.552746065120276e-07
+B,BAU,non_climate,acidification,Acidification,conventional_static,kg SO2 eq,90151.55046871476
+B,BAU,non_climate,acidification,Acidification,time_explicit_static,kg SO2 eq,24129.075321018405
+B,BAU,non_climate,eutrophication,Eutrophication,conventional_static,kg N eq,9804.14616983774
+B,BAU,non_climate,eutrophication,Eutrophication,time_explicit_static,kg N eq,2865.488619385964
+B,BAU,non_climate,ozone_depletion,Ozone Depletion,conventional_static,kg CFC-11 eq,1.396982863575831
+B,BAU,non_climate,ozone_depletion,Ozone Depletion,time_explicit_static,kg CFC-11 eq,1.3823561022129622
+B,BAU,non_climate,particulate_matter,Particulate Matter Formation,conventional_static,kg PM2.5 eq,11296.916885440993
+B,BAU,non_climate,particulate_matter,Particulate Matter Formation,time_explicit_static,kg PM2.5 eq,2763.3084590353583
+B,BAU,non_climate,photochemical_oxidant_formation,Photochemical Oxidant Formation,conventional_static,kg O3 eq,1025008.4695364378
+B,BAU,non_climate,photochemical_oxidant_formation,Photochemical Oxidant Formation,time_explicit_static,kg O3 eq,279581.1450067922
+B,BAU,non_climate,fossil_energy_demand,Fossil Energy Demand,conventional_static,MJ,394582037.837038
+B,BAU,non_climate,fossil_energy_demand,Fossil Energy Demand,time_explicit_static,MJ,150355168.0055328

@@ -1,0 +1,56 @@
+{
+  "source": {
+    "table": "ACS B25040",
+    "description": "Massachusetts ACS House Heating Fuel, renormalized to fossil gas:oil share for the single-family conventional reference baseline.",
+    "massachusetts_utility_gas_percent": 50.5,
+    "massachusetts_fuel_oil_percent": 22.4,
+    "renormalized_gas_share": 0.6927297668038409,
+    "renormalized_oil_share": 0.3072702331961591,
+    "base_rounding": "Rounded to 0.70 gas / 0.30 oil. Framingham is a gas-served MetroWest suburb, so this is conservative relative to the statewide fossil gas:oil ratio.",
+    "references": [
+      "U.S. Census ACS Table B25040, House Heating Fuel: https://data.census.gov/table/ACSDT5Y2021.B25040",
+      "Mass.gov, How Massachusetts households heat their homes: https://www.mass.gov/info-details/how-massachusetts-households-heat-their-homes"
+    ],
+    "optional_framingham_api": "https://api.census.gov/data/2023/acs/acs5?get=NAME,B25040_001E,B25040_002E,B25040_005E&for=place:24100&in=state:25&key=YOUR_KEY"
+  },
+  "base": {
+    "gas_share": 0.70,
+    "oil_share": 0.30,
+    "label": "base_acs_massachusetts_fossil_ratio"
+  },
+  "west_residential_heating": {
+    "gas_share": 0.70,
+    "oil_share": 0.30,
+    "note": "Base single-family fossil heating split from Massachusetts ACS B25040 gas:oil ratio; replace with Framingham place-level ACS or parcel data when available."
+  },
+  "east_or_southeast_residential_heating": {
+    "inherited_from": "west_residential_heating",
+    "note": "Applies the same single-family fossil heating split until parcel/building-level fuel assignments are available."
+  },
+  "sensitivity": {
+    "S1_fuel_split": {
+      "parameter": "single_family_gas_oil_split",
+      "rationale": "ISO 14040/14044 uncertainty/sensitivity of key assumptions: the split is provisional and directly trades gas combustion/methane effects against fuel-oil burden.",
+      "points": [
+        {
+          "scenario": "S1_low",
+          "gas_share": 0.60,
+          "oil_share": 0.40,
+          "label": "lower gas / higher oil"
+        },
+        {
+          "scenario": "S1_base",
+          "gas_share": 0.70,
+          "oil_share": 0.30,
+          "label": "ACS-derived base"
+        },
+        {
+          "scenario": "S1_high",
+          "gas_share": 0.75,
+          "oil_share": 0.25,
+          "label": "higher gas / lower oil"
+        }
+      ]
+    }
+  }
+}

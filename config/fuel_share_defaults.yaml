@@ -1,0 +1,5 @@
+{
+  "deprecated": true,
+  "replacement": "inputs/config/fuel_share_framingham_acs.yaml",
+  "note": "Do not set active gas/oil shares here. The single source of truth for the single-family conventional-reference gas/oil heating split is fuel_share_framingham_acs.yaml."
+}

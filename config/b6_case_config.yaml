@@ -1,0 +1,198 @@
+{
+  "project": {
+    "brightway_project": "GEN_DLCA_391",
+    "gen_fg_db": "gen_dynamic_fg",
+    "bau_fg_db": "bau_dynamic_fg",
+    "synchronized_fg_dbs": {
+      "heatnets_authoritative": {
+        "gen_fg_db": "gen_dynamic_fg_heatnets_sync",
+        "bau_fg_db": "bau_dynamic_fg_heatnets_sync"
+      },
+      "generic_recycling_sensitivity": {
+        "gen_fg_db": "gen_dynamic_fg_heatnets_sync_generic_recycling",
+        "bau_fg_db": "bau_dynamic_fg_heatnets_sync_generic_recycling"
+      }
+    },
+    "background_dbs": [
+      "ecoinvent_2025_SSP2-PkBudg1000",
+      "ecoinvent_2040_SSP2-PkBudg1000",
+      "ecoinvent_2045_SSP2-PkBudg1000",
+      "ecoinvent_2050_SSP2-PkBudg1000",
+      "ecoinvent_2055_SSP2-PkBudg1000"
+    ]
+  },
+  "paths": {
+    "heatnets_source": "HEET_LeGUp_git_Framingham",
+    "legacy_operation_phase_dir": "Framingham_Operation_phase",
+    "legacy_operation_phase_zip": "Framingham_Operation_phase.zip",
+    "legacy_b6_notebook": "Full_code_GEN_B6.ipynb",
+    "non_b6_notebooks": [
+      "notebooks/01_build_gen_foreground_nonB6_revised.ipynb",
+      "notebooks/02_build_bau_foreground_nonB6_revised.ipynb",
+      "notebooks/03_dynamic_LCIA_nonB6.ipynb",
+      "notebooks/05_case_study_scaling_sanity.ipynb"
+    ]
+  },
+  "heatnets": {
+    "preferred_weather_folder": "HEET_results_TMY_weatherized_shifted",
+    "fallback_weather_folder": "HEET_results_TMY_weatherized",
+    "run_name": "Framingham_B6_rerun",
+    "sections": 25,
+    "t_big_limit": 8760,
+    "increment_per_hour": 1,
+    "flag_adjust_building_loads": true,
+    "require_full_year_nonzero_output_elec": true,
+    "expected_hourly_rows": 8760,
+    "export_hourly_loop_temperature": true,
+    "dhw": {
+      "include_dhw": true,
+      "source_if_heatnets_waterh_zero": "archetype_reconstruction",
+      "waterh_zero_threshold_kwh": 1.0e-06,
+      "method": "heatnets_heating_curve_surrogate",
+      "fallback_method": "constant_cop",
+      "fallback_constant_cop": 2.8,
+      "temperature_basis": "loop_avg_temperature_c"
+    },
+    "auxiliary_balance": {
+      "source_column_type": "thermal_balance_load",
+      "heating_conversion_method": "electric_resistance",
+      "heating_efficiency": 1.0,
+      "cooling_conversion_method": "constant_cop",
+      "cooling_cop": 3.0
+    }
+  },
+  "bau": {
+    "analysis_start_year": 2025,
+    "service_life_years": 50,
+    "methane_leakage_rate": 0.0204,
+    "gas_lhv_kwh_per_kg_ch4": 13.9,
+    "natural_gas_kwh_per_m3": 10.55,
+    "fuel_oil_kwh_per_kg": 11.86,
+    "dhw_scaling_method": "archetype_ratio_to_heatnets_annual_heating",
+    "direct_combustion": {
+      "natural_gas": {
+        "co2_kg_per_kwh_fuel": 0.181,
+        "ch4_kg_per_kwh_fuel": 0.0000036,
+        "n2o_kg_per_kwh_fuel": 0.00000036
+      },
+      "fuel_oil": {
+        "co2_kg_per_kwh_fuel": 0.267,
+        "ch4_kg_per_kwh_fuel": 0.0000006,
+        "n2o_kg_per_kwh_fuel": 0.0000006
+      }
+    }
+  },
+  "bw_timex": {
+    "analysis_start_year": 2025,
+    "operation_start_year_offset": 1,
+    "operation_end_year_offset": 50,
+    "normalization": {
+      "default_mode": "heatnets_case_service_loads",
+      "supported_modes": [
+        "existing_non_b6_project",
+        "heatnets_case_service_loads"
+      ],
+      "existing_non_b6_lifetime_delivered_kwh_th": 127720462.0
+    },
+    "foreground_activity_codes": {
+      "gen_stage_a_dynamic": "GEN_STAGEA_DYNAMIC",
+      "gen_stage_b_full_dynamic": "GEN_STAGEB_FULL_DYNAMIC",
+      "gen_stage_c_dynamic": "GEN_STAGEC_DYNAMIC",
+      "gen_b6_operation": "GEN_B6_OPERATION",
+      "gen_b6_dynamic_only": "GEN_B6_DYNAMIC_ONLY",
+      "gen_total_with_b6": "GEN_TOTAL_with_B6",
+      "bau_stage_a_dynamic": "BAU_STAGEA_DYNAMIC",
+      "bau_stage_b_full_dynamic": "BAU_STAGEB_FULL_DYNAMIC",
+      "bau_stage_c_dynamic": "BAU_STAGEC_DYNAMIC",
+      "bau_b6_operation": "BAU_B6_OPERATION",
+      "bau_b6_dynamic_only": "BAU_B6_DYNAMIC_ONLY",
+      "bau_total_with_b6": "BAU_TOTAL_with_B6",
+      "gen_non_b6_total": "GEN_TOTAL_nonB6",
+      "bau_non_b6_total": "BAU_TOTAL_nonB6"
+    },
+    "foreground_sets": {
+      "existing_non_b6_project": {
+        "gen_fg_db": "gen_dynamic_fg",
+        "bau_fg_db": "bau_dynamic_fg"
+      },
+      "heatnets_authoritative_sync": {
+        "gen_fg_db": "gen_dynamic_fg_heatnets_sync",
+        "bau_fg_db": "bau_dynamic_fg_heatnets_sync"
+      },
+      "generic_recycling_sensitivity": {
+        "gen_fg_db": "gen_dynamic_fg_heatnets_sync_generic_recycling",
+        "bau_fg_db": "bau_dynamic_fg_heatnets_sync_generic_recycling"
+      }
+    }
+  },
+  "end_of_life": {
+    "default_scenario": "framingham_core_no_recycling",
+    "sensitivity_scenarios": [
+      "generic_recycling_sensitivity"
+    ],
+    "scenarios": {
+      "framingham_core_no_recycling": {
+        "description": "Framingham manuscript-facing core case with no generic material recycling credits, abandonment in place for buried infrastructure where appropriate, and retained regulated fluid or refrigerant treatment.",
+        "notes": [
+          "No generic material recycling credit is applied without project-specific evidence.",
+          "Buried geothermal loop and borehole-related proxies are treated as abandonment in place rather than modeled removal with recycling credits.",
+          "Refrigerant recovery and explicit fluid-treatment steps remain because they represent regulated handling rather than unsupported generic recycling credits."
+        ],
+        "gen": {
+          "target_activity_codes": [
+            "GEN_C1C4_EOL"
+          ],
+          "remove_exchange_name_substrings": [
+            "market for bentonite",
+            "waste polyethylene",
+            "market for scrap steel"
+          ],
+          "keep_exchange_name_substrings": [
+            "spent solvent",
+            "hazardous waste incineration"
+          ]
+        },
+        "bau": {
+          "target_activity_codes": [
+            "BAU_C1C4_EOL_removed_y20",
+            "BAU_C1C4_EOL_removed_y40",
+            "BAU_C1C4_EOL_final_y50"
+          ],
+          "remove_exchange_name_substrings": [
+            "market for scrap steel",
+            "market for scrap aluminium",
+            "market for scrap copper"
+          ],
+          "keep_exchange_name_substrings": [
+            "used refrigerant",
+            "waste polyethylene"
+          ]
+        }
+      },
+      "generic_recycling_sensitivity": {
+        "description": "Preserves the pre-fix generic recycling and recovery routing inherited from the synchronized non-B6 foregrounds for transferability and comparison.",
+        "notes": [
+          "This scenario retains the original generic scrap-material routing and recovery assumptions.",
+          "It is preserved as a sensitivity case and no longer serves as the Framingham core interpretation."
+        ]
+      }
+    }
+  },
+  "reporting": {
+    "cambium_region": "ISONE",
+    "cambium_scenario": "MidCase",
+    "cambium_metric": "aer_load_co2e",
+    "missing_cambium_year_strategy": "nearest_lower_available",
+    "gwp_factors_100yr": {
+      "methane": 29.8,
+      "dinitrogen_monoxide": 273.0
+    },
+    "cambium_years": [
+      2025,
+      2040,
+      2045,
+      2050,
+      2055
+    ]
+  }
+}

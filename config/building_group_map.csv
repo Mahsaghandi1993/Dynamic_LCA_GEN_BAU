@@ -1,0 +1,38 @@
+building_id,building_name,group_name,archetype_key,heatnets_hp_type,notes
+C5,Community College 1,commercial_municipal,secondaryschool,Commercial,Commercial education building mapped provisionally to ComStock secondaryschool.
+C3,Gas Station,commercial_municipal,quickservicerestaurant,Commercial,Commercial food-sales building mapped provisionally to ComStock quickservicerestaurant.
+C1,Firehouse,commercial_municipal,smalloffice,Commercial,Public-order building mapped provisionally to ComStock smalloffice.
+C4,Cabinets,commercial_municipal,retailstandalone,Commercial,Retail building mapped provisionally to ComStock retailstandalone.
+C2,FHA building,commercial_municipal,smalloffice,Commercial,Office building mapped provisionally to ComStock smalloffice.
+R27,FHA Apartments 1,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R23,FHA Apartments 2,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R29,FHA Apartments 3,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R8,FHA Apartments 4,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R28,FHA Apartments 5,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R32,FHA Apartments 6,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R6,FHA Apartments 7,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R20,FHA Apartments 8,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R24,FHA Apartments 9,fha_multifamily,multi-family_with_5plus_units,Versatec,HEATNETS multifamily apartment building.
+R13,House 1,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R19,House 2,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R2,House 3,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R9,House 4,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R11,House 5,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R15,House 6,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R21,House 7,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R31,House 8,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R14,House 9,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R30,House 10,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R10,House 11,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R16,House 12,west_residential,single-family_detached,YorkSFH,Provisional west-residential assignment from pilot-map interpretation.
+R26,House 13,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R12,House 14,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R4,House 15,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R1,House 16,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R25,House 17,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R7,House 18,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R17,House 19,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R18,House 20,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R3,House 21,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R22,House 22,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.
+R5,House 23,east_or_southeast_residential,single-family_detached,YorkSFH,Provisional non-west residential assignment; actual parcel map still needed.

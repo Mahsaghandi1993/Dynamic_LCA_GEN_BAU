@@ -1,0 +1,12 @@
+{
+  "description": "Monte Carlo convergence QA for robustness_v3 using the accepted 1000-draw paired/shared Monte Carlo as the fixed nested prefix.",
+  "baseline_draw_count": 1000,
+  "draw_counts": [1000, 2000, 5000, 10000],
+  "seed": 3912026,
+  "endpoint": "total dynamic global warming",
+  "delta_definition": "BAU - GEN",
+  "importance_top_k": 5,
+  "accepted_mc_root": "export/robustness_v3/uncertainty_mc",
+  "output_root": "export/robustness_v3/uncertainty_mc_convergence_qa",
+  "accepted_method_comparison": "export/method_comparison/total_method_comparison_GEN_vs_BAU.csv"
+}

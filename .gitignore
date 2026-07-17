@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# never commit licensed or confidential inputs
+inputs/raw/
+*.7z
+brightway_projects/

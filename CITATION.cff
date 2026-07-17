@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "networked-geothermal-dynamic-lca: time-explicit, prospective and dynamic-climate LCA of a networked geothermal energy system"
+version: 2.0.0
+date-released: 2026-07-15
+doi: 10.5281/zenodo.20272929
+repository-code: "https://github.com/Mahsaghandi1993/networked-geothermal-dynamic-lca"
+license: BSD-3-Clause
+authors:
+  - family-names: Ghandi
+    given-names: Mahsa
+    affiliation: "University of Massachusetts Lowell"
+  - family-names: Burek
+    given-names: Jasmina
+    affiliation: "University of Massachusetts Lowell"
+  - family-names: Varela
+    given-names: Isabel
+    affiliation: "Home Energy Efficiency Team (HEET)"
+keywords:
+  - networked geothermal
+  - dynamic life cycle assessment
+  - prospective LCA
+  - Brightway
+  - building heating decarbonization
+  - carbon payback
+preferred-citation:
+  type: article
+  title: "A prospective and dynamic life-cycle assessment framework for the early-design stage of networked geothermal heating in cold climates"
+  journal: "Geothermics"
+  year: 2026
+  authors:
+    - family-names: Ghandi
+      given-names: Mahsa
+    - family-names: Burek
+      given-names: Jasmina
+    - family-names: Varela
+      given-names: Isabel
