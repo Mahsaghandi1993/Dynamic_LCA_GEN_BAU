@@ -11,7 +11,7 @@ for the manuscript:
 
 > Ghandi, M., Burek, J., Varela, I. *A prospective and dynamic life-cycle assessment
 > framework for the early-design stage of networked geothermal heating in cold
-> climates.* Submitted to **Geothermics** (2026).
+> climates.* In preparation for submission to **Geothermics** (2026).
 
 ![Graphical abstract](figures/graphical_abstract_elsevier.png)
 
