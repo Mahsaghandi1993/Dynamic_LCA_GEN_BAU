@@ -6,6 +6,8 @@ networked geothermal energy system (GEN) versus a conventional gas/oil reference
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20272929.svg)](https://doi.org/10.5281/zenodo.20272929)
 
+**Cite this software:** Ghandi, M., Burek, J., & Varela, I. (2026). *networked-geothermal-dynamic-lca: Time-explicit, prospective and dynamic-climate LCA of a networked geothermal energy system versus a gas/oil reference* [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.20272929
+
 This repository contains the code, public configuration, derived results, and figures
 for the manuscript:
 
@@ -82,10 +84,17 @@ reasonable request.
 
 ## How to cite
 
-If you use this code or data, please cite the Zenodo archive
-([10.5281/zenodo.20272929](https://doi.org/10.5281/zenodo.20272929)) and the
-manuscript above. A `CITATION.cff` is provided — GitHub's *Cite this repository*
-button generates BibTeX/APA for you.
+If you use this code or data, please cite:
+
+> Ghandi, M., Burek, J., & Varela, I. (2026). *networked-geothermal-dynamic-lca:
+> Time-explicit, prospective and dynamic-climate LCA of a networked geothermal
+> energy system versus a gas/oil reference* [Computer software]. Zenodo.
+> https://doi.org/10.5281/zenodo.20272929
+
+together with the manuscript above. The DOI resolves to the latest archived
+version (this release: [10.5281/zenodo.21415688](https://doi.org/10.5281/zenodo.21415688)).
+A `CITATION.cff` is provided — GitHub's *Cite this repository* button generates
+BibTeX/APA for you.
 
 ## License
 
