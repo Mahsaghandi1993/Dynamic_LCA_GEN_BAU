@@ -4,7 +4,7 @@
 networked geothermal energy system (GEN) versus a conventional gas/oil reference (REF).**
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20272929.svg)](https://doi.org/10.5281/zenodo.20272929)
+[![DOI](https://doi.org/10.5281/zenodo.21415688)
 
 This repository contains the code, public configuration, derived results, and figures
 for the manuscript:
